@@ -1,0 +1,8 @@
+const { resolve } = require('path');
+
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'), // arquivo de configuração do BD
+  'models-path': resolve(__dirname, 'src', 'models'), // Models do MVC
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), // migrações são alterações no BD, se eu criar uma tabela é uma migração _ um historico de alterações
+  'seeders-path': resolve(__dirname,'src', 'database','seeds'), // os seeders criam dados para serem testados o sistema
+}
